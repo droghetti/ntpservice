@@ -9,7 +9,7 @@ import (
 
 func _unixtime(w http.ResponseWriter, r *http.Request) {
     t := time.Now()
-	fmt.Fprintf(w, "%du", t.UTC().Unix())
+	fmt.Fprintf(w, "%d", t.UTC().Unix())
 }
 
 func _utctime(w http.ResponseWriter, r *http.Request) {
