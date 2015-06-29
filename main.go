@@ -19,6 +19,6 @@ func _utctime(w http.ResponseWriter, r *http.Request) {
 
 func main() {
     http.HandleFunc("/", _unixtime)
-    http.HandleFunc("/utctime", _utctime)
+    http.HandleFunc("/utctime/", _utctime)
     http.ListenAndServe(":8081", nil)
 }
